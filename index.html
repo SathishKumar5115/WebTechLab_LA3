@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form id="your-info" action="">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="name">Enter Name</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Your Name" id="name" name="name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="ddmmyy">Enter DOB
+
+                                </label>
+                            </td>
+                            <td>
+                                <input type="date" id="ddmmyy" name="dob">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="age">Enter Age</label>
+                            </td>
+                            <td>
+                                <input type="number" placeholder="Numbers Only" id=age name="age">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="formgender">Enter Gender</label>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="gender" id="male" value="male"><label
+                                                for="male">Male</label>
+
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="gender" id="female" value="female">
+                                            <label for="female">Female</label>
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="gender" id="other" value="other">
+                                            <label for="other">Other</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mail">Enter Mail</label>
+                            </td>
+                            <td>
+                                <input type="email" placeholder="Your Mail" id="mail" name="mail">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="formpassword">Enter Password</label></td>
+                            <td><input type="password" placeholder="password" id="formpassword" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="formtime">Enter Time</label>
+                            </td>
+                            <td><input type="time" id="formtime" name="time">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="formcolor">Pick a Color</label>
+                            </td>
+                            <td><input type="color" name="color"></td>
+                        </tr>
+
+                    </table>
+                    <div class="submit"> <input type="submit" value="submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <h2 class="hcenter">Hijacking Searches</h2>
+                <form class="search" action="https://www.reddit.com/search/" target="_blank">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="rs">Search Reddit</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Search Reddit" id="rs" name="q">
+                            </td>
+                            <td><button id="btn-red-search">Search</button></td>
+                        </tr>
+                    </table>
+
+                </form>
+                <form class=search action="https://www.google.com/search" target="_blank">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="rg">Search Google</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Search google" id="rg" name="q">
+                            </td>
+                            <td><button id="btn-ggle-search">Search</button></td>
+                        </tr>
+                    </table>
+
+                </form>
+                <form class=search action="https://www.youtube.com/results" target="_blank">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="ry">Search Youtube</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Search youtube" id="ry" name="search_query">
+
+                            </td>
+                            <td>
+                                <button id="btn-utube-search">Search</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
